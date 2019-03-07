@@ -1,8 +1,11 @@
 <template>
     <div class="bee-container">
-        <header class="nav-header"></header>
+        <header class="nav-header">
+            <toolbar/>
+        </header>
         <div class="bee-main">
             <div class="nav-left">
+                <sidebar/>
             </div>
             <div class="bee-context">
             </div>
@@ -11,11 +14,13 @@
 </template>
 
 <script>
+    import toolbar from './toolbar.vue'
+    import sidebar from './sidebar.vue'
     export default {
-        name: "index"
+      components: {
+        toolbar,
+        sidebar
+      },
+      name: "index"
     }
 </script>
-
-<style scoped>
-
-</style>
