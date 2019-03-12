@@ -5,6 +5,12 @@
             <div class="nav-left">
             </div>
             <div class="bee-context">
+                <div class="nav-tags"></div>
+                <el-scrollbar style="height:100%">
+                    <keep-alive>
+                        <router-view/>
+                    </keep-alive>
+                </el-scrollbar>
             </div>
         </div>
     </div>
@@ -15,7 +21,3 @@
         name: "index"
     }
 </script>
-
-<style scoped>
-
-</style>

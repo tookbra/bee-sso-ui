@@ -1,5 +1,11 @@
-.avue-header
+.nav-header
   transition: all .3s;
+
+.nav-header {
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
 
 .bee-container
   width: 100%;
@@ -7,11 +13,21 @@
   background: #f0f2f5;
   background-size: 100%;
   background-repeat: no-repeat;
-  .nav-left
-    width: 60px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 240px;
-    height: 100%;
-    z-index: 1025;
+
+.nav-left
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  z-index: 1025;
+
+.bee-context
+  position: absolute;
+  left: 240px;
+  padding: 0;
+  padding-bottom: 20px;
+  width: calc(100% - 240px);
+  height: calc(100% - 70px);
+  box-sizing: border-box;
+  overflow: hidden;
